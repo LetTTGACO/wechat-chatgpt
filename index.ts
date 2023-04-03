@@ -1,5 +1,4 @@
 import { WechatyBuilder } from 'wechaty'
-import { Contact as ContactType } from 'wechaty-puppet/types'
 import Qrterminal from 'qrcode-terminal'
 import * as Sentry from '@sentry/node'
 
@@ -23,6 +22,7 @@ const bot = WechatyBuilder.build({
 })
 
 function handleScan(qrcode: string) {
+  console.log(qrcode)
   Qrterminal.generate(qrcode, { small: true })
 }
 

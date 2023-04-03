@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node index.ts",
+    "build": "ts-node index.ts",
     "ncu": "ncu",
     "dev": "nodemon index.ts"
   },
