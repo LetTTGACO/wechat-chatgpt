@@ -1,5 +1,5 @@
 import { WechatyBuilder } from 'wechaty'
-import Qrterminal from 'qrcode-terminal'
+// import Qrterminal from 'qrcode-terminal'
 import * as Sentry from '@sentry/node'
 
 import * as message from './event/message'
@@ -23,7 +23,7 @@ const bot = WechatyBuilder.build({
 
 function handleScan(qrcode: string) {
   console.log(qrcode)
-  Qrterminal.generate(qrcode, { small: true })
+  // Qrterminal.generate(qrcode, { small: true })
 }
 
 bot
